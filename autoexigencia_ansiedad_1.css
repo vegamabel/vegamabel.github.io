@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía: Google Fonts 'Merriweather' para texto y 'Montserrat' para encabezados */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&display=swap');
+
+/* Cuerpo */
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #f9fafb;
+  color: #2c3e50;
+  line-height: 1.8;
+  padding: 25px;
+}
+
+/* Contenedor principal */
+#contenedor {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background-color: #eaf3fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 2);
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #1a374d;
+  margin-bottom: 18px;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #3a5068;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #3a5068;
+  color: #f9fafb;
+  outline: none;
+}
+
+/* Artículo */
+article p {
+  margin-bottom: 24px;
+  font-size: 1.15rem;
+}
+
+article h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #406882;
+  margin-top: 42px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #89a7b9;
+  padding-bottom: 8px;
+  font-size: 1.75rem;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 18px;
+  font-size: 0.95rem;
+  color: #7b8d93;
+  border-top: 1px solid #dbe3e8;
+}
+
+
+@media screen and (max-width: 600px) {
+  #contenedor {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+  }
+
+  article h2 {
+    font-size: 1.4rem;
+  }
+
+  article p {
+    font-size: 1.05rem;
+  }
+}
