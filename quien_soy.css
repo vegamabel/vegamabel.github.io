@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+/* Contenedor principal */
+#contenedor {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #E5E7E9;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,1.0);
+    border-radius: 10px;
+}
+
+.subtitulo {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #004080;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.caja-foto{
+
+    width: 400px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.foto-perfil{
+
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    border-bottom: 2px solid #004080;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    color: #004080;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5DADE2;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #5DADE2;
+}
+
+nav ul li a.activo {
+    background-color: #5DADE2;
+    color: #fff;
+}
+
+/* Main sección */
+main section h2 {
+    font-size: 1.5rem;
+    color: #002050;
+    margin-bottom: 15px;
+}
+
+main section h3 {
+    font-size: 1.3rem;
+    color: #003366;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main section p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+main section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+main section ul li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive: dispositivos móviles */
+@media (max-width: 600px) {
+    #contenedor {
+        padding: 15px 20px;
+        margin: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+    }
+}
