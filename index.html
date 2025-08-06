@@ -1,50 +1,381 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Mi Blog Personal</title>
-	<link rel="stylesheet" href="mi_blog_personal.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lic. Mabel Vega - Psicóloga Online</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <!-- AOS CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: #343a40;
+      font-family: "Segoe UI", sans-serif;
+    }
+    .navbar {
+      background-color: #e9f1f5;
+    }
+    .nav-link,
+    .navbar-brand {
+      color: #4a7c94 !important;
+      font-weight: 500;
+    }
+    .hero {
+      background-color: #dbe9f1;
+      padding: 60px 20px;
+      text-align: left;
+    }
+    .hero h1 {
+      color: #4a7c94;
+      font-weight: 700;
+    }
+    .hero p {
+      color: #6c757d;
+      font-size: 1.25rem;
+    }
+    .btn-primary {
+      background-color: #4a7c94;
+      border-color: #4a7c94;
+    }
+    .btn-primary:hover {
+      background-color: #3b687c;
+      border-color: #3b687c;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .bg-light-gray {
+      background-color: #dee2e6;
+    }
+    footer {
+      background-color: #dee2e6;
+      padding: 30px 0;
+    }
+    footer p {
+      margin: 0;
+      color: #6c757d;
+    }
+
+    /* Estilos para la galería */
+    .gallery-img {
+      filter: brightness(95%);
+      transition: filter 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery-img:hover {
+      filter: brightness(110%);
+    }
+  </style>
 </head>
-<body>	
-	<div id="contenedor">
-		<header>
-			<div class="contenido-header">
-				<div class="texto-header">
+<body>
+  <!-- NAVBAR -->
+  <nav
+    class="navbar navbar-expand-lg shadow-sm"
+    data-aos="fade-down"
+    data-aos-duration="1000"
+  >
+    <div class="container">
+      <a class="navbar-brand" href="#">Mabel Vega</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#consultas">Motivos de consulta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://vegamabel.github.io/"
+              target="_blank"
+              >Blog <i
+                class="bi bi-box-arrow-up-right"
+                style="font-size: 0.9em"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-					<h1>Bienvenidos a mi Blog</h1>
-					<nav>
-						<ul>
-							
-							<li><a href="inicio.html">Inicio</a></li>
-							<li><a href="quien_soy.html">Quién soy</a></li>
-							<li><a href="articulos.html">Articulos</a></li>
-							<li><a href="reflexiones.html" class="activo">Reflexiones</a></li>
-							<li><a href="contacto.html">Contacto</a></li>
-												
-						</ul>
-			
-					</nav>
-				</div>
-				<img src="foto_reducida.jpg" alt="Consultorio" class="foto-header">
+  <!-- HERO -->
+  <section class="hero" data-aos="fade-up">
+    <div class="container">
+      <h1 class="display-5">Psicóloga online</h1>
+      <p class="lead">Lic. Mabel Vega – Atención a adolescentes y adultos</p>
+      <a href="#contacto" class="btn btn-primary mt-3">Solicitar entrevista</a>
+    </div>
+  </section>
 
-	</header>
+  <!-- SOBRE MI -->
+  <section
+    id="sobre-mi"
+    class="bg-light-gray"
+    data-aos="fade-up"
+    data-aos-delay="100"
+  >
+    <div class="container">
+      <h2 class="mb-4 text-center text-muted">Sobre mí</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0" data-aos="zoom-in" data-aos-delay="150">
+          <img
+            src="yoremeraroja.jpg"
+            class="img-fluid rounded-circle"
+            alt="Foto Mabel Vega"
+            width="220"
+          />
+        </div>
+        <div class="col-md-8" data-aos="fade-left" data-aos-delay="200">
+          <p>
+            Soy Licenciada en Psicología (UBA, 1991), con más de 30 años de
+            experiencia en atención clínica a adolescentes y adultos. Me
+            especializo en psicoterapia individual, psicodiagnóstico y evaluación
+            en contextos clínicos y forenses.
+          </p>
+          <p>
+            Trabajo de manera confidencial, ética y respetuosa, brindando
+            herramientas para el bienestar emocional desde una perspectiva
+            integradora.</p>
+          <p>Conocé más sobre mi trabajo y mi enforque clínico en mi blog profesional</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<main>
-		<section>
-			<h2>Un espacio para la reflexión</h2>
-			
-			<p class="alinear-izquierda">
+  <!-- CONSULTAS -->
+  <section id="consultas" data-aos="fade-up" data-aos-delay="50">
+    <div class="container">
+      <h2 class="mb-4 text-center text-muted">Motivos frecuentes de consulta</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-emoji-frown fs-1 text-secondary"></i>
+          <p class="mt-2">Ansiedad, angustia, estrés</p>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-people fs-1 text-secondary"></i>
+          <p class="mt-2">Conflictos familiares o de pareja</p>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-person-x fs-1 text-secondary"></i>
+          <p class="mt-2">Baja autoestima, inseguridad</p>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-shield-lock fs-1 text-secondary"></i>
+          <p class="mt-2">Procesos judiciales / Evaluaciones forenses</p>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="500">
+          <i class="bi bi-hourglass-split fs-1 text-secondary"></i>
+          <p class="mt-2">Crisis vitales / Duelos</p>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="600">
+          <i class="bi bi-laptop fs-1 text-secondary"></i>
+          <p class="mt-2">Consultas online desde cualquier lugar</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-					Comparto aquí mi experiencia como psicóloga clínica, reflexiones sobre salud mental y recursos útiles para quienes atraviesan momentos de cambio, dificultad o de búsqueda personal o profesional vinculados al bienestar emocional y mucho más. Te invito a recorrer las distintas secciones y contactarme si sentís que puedo acompañarte. Estoy disponible para escucharte y brindarte orientación en lo que necesites</p>
-			
-		</section>
-	</main>
+  <!-- SERVICIOS DESTACADOS -->
+  <section class="bg-white" data-aos="fade-up" data-aos-delay="50">
+    <div class="container">
+      <h2 class="mb-5 text-center text-muted">¿Cómo puedo ayudarte?</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="bi bi-telephone-forward fs-1 text-primary mb-3"></i>
+              <h5>Psicoterapia online</h5>
+              <p>Atención confidencial desde la comodidad de tu hogar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="bi bi-file-earmark-text fs-1 text-primary mb-3"></i>
+              <h5>Peritajes psicológicos</h5>
+              <p>Experiencia en informes y evaluaciones forenses.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="bi bi-chat-heart fs-1 text-primary mb-3"></i>
+              <h5>Acompañamiento emocional</h5>
+              <p>Espacio de escucha, contención y orientación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<footer>
-		<p>&copy; 2025 - Mabel R. Vega</p>
-	</footer>
-	</div>
+  <!-- TESTIMONIOS CON SLIDER -->
+  
+      <section class="bg-light-gray" data-aos="fade-up" data-aos-delay="50"> 
+  <div class="container">
+    <h2 class="mb-5 text-center text-muted">Podrás obtener del proceso terapéutico</h2>
+    <div
+      id="testimonios"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="2000"
+      data-aos="fade-up"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <p class="lead">
+            Recuperar tu confianza y seguridad
+          </p>
+        </div>
+        <div class="carousel-item text-center">
+          <p class="lead">
+            Liberarte de vínculos dañinos
+          </p>
+        </div>
+        <div class="carousel-item text-center">
+          <p class="lead">
+            Desbloquear tu potencial y alcanzar metas
+          </p>
+        </div>
+        <div class="carousel-item text-center">
+          <p class="lead">
+            Animarte a tomar decisiones postergadas
+          </p>
+        </div>
+        <div class="carousel-item text-center">
+          <p class="lead">
+            Aprender a poner límites sanos
+          </p>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#testimonios"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#testimonios"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- GALERÍA DE IMÁGENES -->
+  <section class="bg-white py-5" data-aos="fade-up" data-aos-delay="50">
+    <div class="container">
+      <h2 class="mb-5 text-center text-muted">El consultorio que hizo historia</h2>
+      <p>Mi trabajo se nutre de la historia del psicoanálisis. Por eso quiero compartir estas imágenes originales del consultorio de quien dio origen a nuestra práctica clínica.</p>
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <img
+            src="sillonFreud.png"
+            alt="Sillón de Freud"
+            class="img-fluid rounded shadow-sm gallery-img"
+            />
+            <p>Diván del consultorio de Sigmund Freud</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <img
+            src="escritorio_Freud-1.png"
+            alt="Escritorio de Freud"
+            class="img-fluid rounded shadow-sm gallery-img"
+          />
+          <p>Escritorio de S. Freud</p>
+        </div>
+        <div class="col-4 col-md-4">
+          <img
+            src="casa_de_freud.jpg"
+            alt="casa y consultorio de S Freud"
+            class="img-fluid rounded shadow-sm gallery-img"
+           
+          />
+          <p>Casa de S. Freud donde funcionó su consultorio. Viena</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section
+    id="contacto"
+    class="bg-light-gray"
+    data-aos="fade-up"
+    data-aos-delay="50"
+  >
+    <div class="container">
+      <h2 class="mb-4 text-center text-muted">Contacto</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre y apellido</label>
+          <input type="text" class="form-control" id="nombre" required />
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea
+            class="form-control"
+            id="mensaje"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center" data-aos="fade-up" data-aos-delay="50">
+    <p>&copy; 2025 Lic. Mabel Vega – Psicóloga | Atención online</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  </script>
 </body>
 </html>
-
