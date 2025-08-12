@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+#contenedor {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #E5E7E9;
+  padding: 20px 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,1.0);
+  border-radius: 10px;
+}
+
+/* Header */
+header {
+  border-bottom: 2px solid #004080;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  color: #004080;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5DADE2;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+  background-color: #d6eaf8;
+  color: #004080;
+}
+
+/* Sección lista de artículos */
+#lista-articulos article {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+#lista-articulos article:last-child {
+  border-bottom: none;
+}
+
+#lista-articulos h2 {
+  font-size: 1.5rem;
+  color: #002050;
+  margin-bottom: 8px;
+}
+
+#lista-articulos h2 a {
+  text-decoration: none;
+  color: #004080;
+}
+
+#lista-articulos h2 a:hover {
+  text-decoration: underline;
+}
+
+#lista-articulos p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.leer-mas {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #d6eaf8;
+  color: #004080;
+  border: 1px solid #aed6f1;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+} /* ← acá faltaba el cierre */
+
+
+
+.leer-mas:hover {
+  background-color: #aed6f1;
+  color: #002d5a;
+  border-color: #85c1e9;
+  text-decoration: none;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    display: block;
+    text-align: center;
+  }
+}
